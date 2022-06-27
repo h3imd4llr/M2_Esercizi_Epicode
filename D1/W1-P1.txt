@@ -1,0 +1,11 @@
+1. Cos'è un algoritmo? Prova a spiegarlo con parole tue, come se lo dovessi spiegare a qualcuno che non ne capisce niente di informatica.
+
+1. Un algoritmo è una sequenza finita di operazioni da eseguire per arrivare ad un determinato obiettivo
+
+2. Cos'è una variabile? Prova a spiegarlo con parole tue, come se lo dovessi spiegare a qualcuno che non ne capisce niente di informatica.
+
+2. Una variabile è un contenitore di dati, suscettibile di modifiche durante l'esecuzione del programma
+
+3. undefined e null sono la stessa cosa (falso)
+
+3. La proprietà undefined indica che una variabile non è stata dichiarata affatto, mentre il valore null rappresenta l'assenza di qualsiasi valore oggetto
