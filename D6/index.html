@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function changeH1() {
+            document.getElementById("tit").innerHTML = "Faster";
+        }
+        function changeBackground() {
+            document.body.style.background = "blue"
+        }
+        function changeVia() {
+            document.getElementById("footer").innerHTML = "Via Indirizzo Fittizio, snc"
+        }
+        function addCss() {
+            var element = document.querySelectorAll('.link')
+            for (const link of element) {
+                link.classList.add('newclass');
+            }
+        }
+        function toggleImage() {
+            var images = document.querySelectorAll('img')
+            for (const img of images) {
+                img.classList.toggle('visibility');
+            }
+        }
+        function changeColor(){
+            let r = Math.random()*255;
+            let g = Math.random()*255;
+            let b = Math.random()*255;
+            var prices = document.querySelectorAll('.price')
+            for (const price of prices){
+                price.style["color"] = "rgb"+"("+r+","+g+","+b+")"
+            }
+        }
+        </script>
+    <style>
+        .visibility {
+            display:none;
+        }
+        td {
+            border: 1px solid black;
+        }
+        img {
+            width: 10vw;
+        }
+        input {
+            width: max-content;
+        }
+        .newclass {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <h1 id="tit">Shopping Fast</h1>
+    <button onclick="changeH1()">ES 7</button>
+    <button onclick="changeBackground()">ES 8</button>
+    <button onclick="changeVia()">ES 9</button>
+    <button onclick="addCss()">ES 10</button>
+    <button onclick="toggleImage()">ES 11</button>
+    <button onclick="changeColor()">ES 12</button>
+    <table>
+        <tr>
+            <th>
+                Immagine
+            </th>
+            <th>
+                Titolo
+            </th>
+            <th>
+                Descrizione
+            </th>
+            <th>
+                Prezzo
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <img src="/sandisk128.jpg" alt="">
+            </td>
+            <td>
+                SanDisk Scheda Di Memoria MicroSDXC Da 128 GB E Adattatore SD, Rosso Grigio
+            </td>
+            <td>
+                Compatibile con dispositivi host che supportano microSDXC e microSDXC UHS-I
+Questo prodotto soddisfa gli standard di compatibilità di Google. Chromebook e il badge Works With Chromebook sono marchi di Google LLC.
+Fino a 1 TB per archiviare ancora più video Full HD
+Classe 10 per la registrazione e la visualizzazione di video Full HD
+Velocità di trasferimento fino a 120 MB/s per spostare fino a 1.000 foto al minuto
+Caricamento più rapido delle app con prestazioni di classe A1
+            </td>
+            <td>
+                <div class="price">
+                    18,70€
+                </div>
+            </td>
+            <td>
+                <a class="link" href="https://amzn.to/3Is8ryY">https://amzn.to/3Is8ryY</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/usb_type-c.jpg" alt="">
+            </td>
+            <td>
+                Cavo USB Type-C, INIU Cavo USB A a USB C 3,1A Ricarica Rapida [3Pezzi/0,5+2+2m] Lega Intrecciato in Nylon QC 3,0 Cavo Tipo C per iPad Xiaomi Huawei Samsung S21 Pixel OnePlus Realme Switch ECC.
+            </td>
+            <td>
+                ✅【INIU - Il Professionista della Ricarica Veloce SICURA】Prova la ricarica più sicura con oltre 38 milioni di utenti globali. In INIU, utilizziamo solo materiali di altissima qualità, quindi abbiamo la sicurezza di fornire una garanzia di 3 anni leader del settore.
+✅【Ricarica rapida 3,1 A】Progettata con cavi in rame SuperConductivity avanzati per una velocità elevata affidabile di 3,1 A. Supporta completamente la ricarica rapida 3.0 per rivitalizzare incredibilmente il tuo telefono fino al 90% in 1 ora.
+✅【Sincronizzazione Rapida】Supporta la sincronizzazione rapida dei dati fino a 480 Mbps, trasferendo tonnellate di film, file, canzoni in un lampo.
+✅【Un Cavo a Vita】L'esclusivo rivestimento intrecciato FLYWEAVE, i giunti flessibili con una sorprendente vita utile di 45000 piegature e un connettore in lega di alluminio saldato al laser 3D di precisione costruiscono un cavo che dura più a lungo che mai.
+✅【Soluzione di Cavi Tuttofare】Soddisfa tutte le tue esigenze ovunque: 0,5m per gli spostamenti, 2m per l'ufficio e 2m per la casa.
+            </td>
+            <td>
+                <div class="price">
+                    8,24€
+                </div>
+            </td>
+            <td>
+                <a class="link" href="https://amzn.to/3bYAiL0">https://amzn.to/3bYAiL0</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/2021-apple-Ipad.jpg" alt="">
+            </td>
+            <td>
+                2021 Apple iPad (10,2", Wi-Fi, 64GB) - Grigio siderale (9ª generazione)
+            </td>
+            <td>
+                Splendido display Retina da 10,2" con True Tone
+Chip A13 Bionic con Neural Engine
+Fotocamera posteriore da 8MP con grandangolo, fotocamera frontale da 12MP con ultragrandangolo e Inquadratura automatica
+Fino a 256GB di archiviazione
+Altoparlanti stereo
+Touch ID per l’autenticazione sicura e Apple Pay
+Wi-Fi 802.11ac
+            </td>
+            <td>
+                <div class="price">
+                    303,41€
+                </div>
+            </td>
+            <td>
+                <a class="link" href="https://amzn.to/3bZFwGj">https://amzn.to/3bZFwGj</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/sumup.jpg" alt="">
+            </td>
+            <td>
+                Lettore di carte SumUp Air
+            </td>
+            <td>
+                OTALE TRASPARENZA: nessun contratto, costo o commissioni aggiuntive. Con il terminale SumUp potrai beneficiare del Bonus POS offerto alle piccole e medie attività, liberi professionisti, lavoratori autonomi e artigiani. Pagherai soltanto l'1.95% per i pagamenti su tutte le carte di debito o di credito.
+FACILE DA USARE: nessuna lunga installazione, puoi impostarlo in soli 5 minuti in modo semplice. Fino a 500 transazioni con una sola ricarica. Supporto clienti gratuito che risponderà a tutte le tue domande tramite telefono, email o chat.
+PER TUTTE LE CARTE E METODI DI PAGAMENTO: I tuoi clienti possono pagare avvicinando la loro carta, telefono o con metodo Chip & PIN. Accetta tutte le carte di debito e i Bancomat (Maestro, V PAY), carte di credito (Visa, Mastercard, American Express, Diners Club, Discover, Union Pay) e persino Google e Apple Pay.
+PAGAMENTO VELOCE, FACILE ED EFFICACE: i pagamenti vengono elaborati in 2-3 giorni lavorativi e vengono accreditati direttamente sul tuo conto. Portalo ovunque e accetta pagamenti nel modo più semplice e veloce.
+APP IOS / ANDROID: collega il tuo dispositivo SumUp Air al tuo smartphone o tablet tramite Bluetooth e accetta pagamenti ovunque tu sia. SumUp Air funziona insieme all’app gratuita di SumUp. Dai un’occhiata all’andamento delle tue vendite direttamente dalla tua Dashboard.
+            </td>
+            <td>
+                <div class="class">
+                    29,99€
+                </div>
+            </td>
+            <td>
+                <a class="link" href="https://amzn.to/3NUV7nV">https://amzn.to/3NUV7nV</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/Kingston-A400.jpg" alt="">
+            </td>
+            <td>
+                Kingston A400 SSD Unità a stato solido interne 2.5" SATA Rev 3.0, 240GB - SA400S37/240G
+            </td>
+            <td>
+                Rapidità di avvio del sistema, caricamento e trasferimento dei file
+Più affidabile e duraturo di un hard drive tradizionale
+Capacità multiple con tutto lo spazio necessario per le applicazioni o per la sostituzione degli hard drive
+            </td>
+            <td>
+                <div class="price">
+                    29,77€
+                </div>
+            </td>
+            <td>
+                <a class="link" href="https://amzn.to/3RkN9Yb">https://amzn.to/3RkN9Yb</a>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <h5 style="margin: 0;">Leave a feedback</h5>
+        <input type="text">
+    </div>
+    <footer id="footer">
+        Shopping Fast
+        Largo Abele Mancini, 18
+    </footer>
+</body>
+</html>
