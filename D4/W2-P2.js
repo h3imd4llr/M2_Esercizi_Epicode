@@ -359,14 +359,24 @@ console.log(x);
 */
 
 /*
-let add = []
-for (let i = 0; i < movies.length; i++) {
-  add[i] = movies[i].Year*1  
-}
-const sumall = add.map(item => item).reduce((prev, curr) => prev + curr, 0)
+const sumall = movies.map(item => item.Year*1).reduce((prev, curr) => prev + curr, 0)
 console.log(sumall);
 */
 
 /* ESERCIZIO 18
   Scrivi del codice per recuperare tutti i film dall'array fornito che contengono una parola fornita.
+*/
+/*
+let str = "Lord" //creazione variabile di ricerca
+let strSrc = str.toLowerCase(); //resa in minuscolo
+for (let i = 0; i < movies.length; i++) {
+  let title = movies[i].Title; //assegno il titolo del movies[i]
+  let titleLower = title.toLowerCase(); //titolo reso minuscolo
+  let filmSrc = movies[i] //assegnato tutto l'oggetto movies[i]
+  if (titleLower.includes(strSrc)){ //chiesto se nel titolo reso minuscolo c'è la variabile resa minuscola
+    console.log(filmSrc); //return tutto l'oggetto movies[i] assegnato alla variabile filmSrc
+  } else {
+    console.log("Non trovato");
+  }
+}
 */
