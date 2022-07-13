@@ -29,17 +29,21 @@ const amy = {
   isAmbassador: false,
 }
 
-const prices = [34, 5, 2]
+const prices = [34, 50, 25, 50]
 const shippingCost = 50
 
 
-var nome = amy
-var cart = Math.floor(Math.random()*10)
-if (nome.isAmbassador) {
-  cart = cart - (cart*30/100)
+var nome = marco
+let somma = 0
+for (i = 0; i < prices.length; i++){
+  somma = somma + prices[i]
 }
-if (cart < 100) {
-  cart += shippingCost
+console.log(somma);
+if (nome.isAmbassador) {
+  somma = somma - (somma*30/100)
+}
+if (somma < 100) {
+  somma += shippingCost
 }
 
-console.log("Il totale è: ", cart)
+console.log("Il totale è: ", somma)
