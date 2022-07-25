@@ -20,7 +20,7 @@
     <title>Pagina 1</title>
   </head>
   <body cz-shortcut-listen="true" onload="onLoad()">
-    <h1>Contenuto che preferisci</h1>
+    <h1 id="">Contenuto che preferisci</h1>
     <ol>
       <li>
         Primo elemento
@@ -213,7 +213,8 @@
     return {'max2': max1}
   }
  }
- console.log(maxElement());
+ console.log(maxElement()
+ */
   </script>
         <!--
           ESERCIZI SUL DOM
@@ -332,5 +333,11 @@ function resetList() {
     <script>
       /*41*/
       
+
+      /*45*/
+       var titolo = document.getElementsByTagName("h1")[0].innerHTML
+       window.addEventListener("click", () =>{
+        document.getElementsByTagName("h1")[0].innerHTML = titolo.slice(0, -1)
+       })
     </script>
 </html>
